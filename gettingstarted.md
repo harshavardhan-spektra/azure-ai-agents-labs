@@ -52,25 +52,29 @@ Together, these components create a secure, scalable, and modular architecture, 
 
 ## 🖼️ Architecture Diagram
 
-![Architecture Diagram](./media/new/arch.png)
+![Architecture Diagram](./media/new/azure-ai-agents-arch-diag-01.png)
  
 ## 🔍 Explanation of Components
 
 - **Microsoft Foundry:** A cloud-based platform for building, deploying, and managing AI applications and models. It enables users to create AI projects, deploy and manage AI models, and integrate AI capabilities into applications using a unified development experience.
+
 - **Azure AI Search:** A cloud-based search and vector database service that enables Retrieval-Augmented Generation (RAG) by indexing, storing, and retrieving relevant content to improve AI-generated responses.
+
 - **Azure AI Services:** A collection of cloud-based AI services and APIs that help developers build intelligent applications with capabilities such as language understanding, speech, vision, document intelligence, and knowledge extraction.
+
 - **LLMs and Embeddings:** Large Language Models (LLMs) are AI models capable of understanding and generating natural language. Embeddings are vector representations of text used to enable semantic search, similarity matching, and knowledge retrieval in AI applications.
+
 - **Storage Account:** An Azure Storage Account provides secure, scalable, and durable cloud storage for blobs, files, queues, and tables. In AI solutions, it is commonly used to store documents, datasets, and application files used by AI services and agents.
 
 # 🚀 Getting Started with the lab
  
-Welcome to your Azure AI agents workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+Welcome to your Microsoft Azure AI Agents workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
 
 ## Accessing Your Lab Environment
  
 Once you're ready to dive in, your virtual machine and **Guide** will be right at your fingertips within your web browser.
  
-  ![Access Your VM and Lab Guide](./media/GS-0.png)
+  ![Access Your VM and Lab Guide](./media/new/GS-new.png)
 
 ## Virtual Machine & Lab Guide
  
@@ -102,7 +106,7 @@ To adjust the zoom level for the environment page, click the **A↕** icon locat
 
 ## ☁️ Let's Get Started with Azure Portal
  
-1. In the LabVM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
+1. In the Lab-VM, click on the **Azure portal** shortcut of the Microsoft Edge browser, which is created on the desktop.
  
    ![Enter Your Username](./media/uplabvmaz.png)
 

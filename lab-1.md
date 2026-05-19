@@ -20,7 +20,7 @@ In this lab, you will perform:
 
 - Task 1: Create a Microsoft Foundry Resource
 - Task 2: Deploying an LLM and embedding models
-- Task 3: Assign permissions to the Azure AI Search resource
+- Task 3: Assign permissions to the Azure resources
 - Task 4: Install dependencies, create a virtual environment, and create an environment variables file.
 
 ## Task 1: Create a Microsoft Foundry Resource
@@ -157,9 +157,21 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 <validation step="73125dc6-9bc8-4d62-ae9c-f9ef5a421385" />
 
-## Task 3:  Assign permissions to the Azure AI Search resource
+## Task 3:  Assign permissions to the Azure resources
 
-In this task, you will configure the necessary permissions for the Azure AI Search resource to ensure it integrates securely and effectively with the AI Agent. This involves setting up the resource, enabling identity, and assigning required roles.
+In this task, you will configure the necessary permissions for the Azure resources to ensure it integrates securely and effectively with the AI Agent. This involves setting up the resource, enabling identity, and assigning required roles.
+
+Before assigning the required roles, it is important to understand how these permissions enable secure communication and integration between Microsoft Foundry, Azure AI Search, Storage Accounts, managed identities, and AI models used throughout the lab.
+
+| Role Assignment | Assigned To | Resource Scope | Why It Is Required |
+|:--------|:-------------|:-------------|:-------------|
+| **Foundry User** | Entra ID User | Microsoft Foundry | Provides access to use Microsoft Foundry projects and resources |
+| **Storage Blob Data Reader** | Azure AI Search Managed Identity | Storage Account | Allows Azure AI Search to read documents from Blob Storage for indexing |
+| **Search Index Data Reader** | Microsoft Foundry Project Managed Identity | Azure AI Search Service | Enables AI agents to retrieve indexed document data for RAG operations |
+| **Search Service Contributor** | Microsoft Foundry Project Managed Identity | Azure AI Search Service | Allows the Foundry project to manage and interact with AI Search resources |
+| **Foundry Project Manager** | Entra ID User | Microsoft Foundry | Enables management and configuration of Foundry projects and resources |
+| **Cognitive Services OpenAI Contributor** | Entra ID User | Microsoft Foundry | Allows deployment and management of GPT and embedding models |
+| **Cognitive Services OpenAI User** | Azure AI Search Managed Identity | Microsoft Foundry | Enables Azure AI Search to generate embeddings using OpenAI models |
 
 1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search** **(2)** from the Services section.
 
