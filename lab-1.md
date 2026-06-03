@@ -134,7 +134,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/new/L1T2S6.png)
 
-1. From the left navigation pane, click **Models (1)** Under the Deploy dropdown select **Deploy a base model (2)**.
+1. From the left navigation pane, click **Models (1)** under the Deploy dropdown select **Deploy a base model (2)**.
 
    ![](./media/new/L1T2S7.png)
 
