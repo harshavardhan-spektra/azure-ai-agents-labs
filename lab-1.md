@@ -108,7 +108,7 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Models (2)** from left pane and Under the deploy dropdown select **Deploy a base model (3)**.
+1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Deployments (2)** from left pane and Under the Deploy dropdown select **Deploy a base model (3)**.
 
     ![](./media/new/L1T2S1.png)
 
@@ -120,7 +120,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/a2.png)
 
-1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Create Deployment (2)**.
+1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Create deployment (2)**.
 
       ![](./media/new/a3.png)
 
