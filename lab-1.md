@@ -108,7 +108,7 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Models (2)** from left pane and select **Deploy a base model (3)**.
+1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Deployments (2)** from left pane and Under the Deploy dropdown select **Deploy a base model (3)**.
 
     ![](./media/new/L1T2S1.png)
 
@@ -120,7 +120,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/a2.png)
 
-1. On the **Deploy gpt-4.1** page, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Deploy (2)**.
+1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Create deployment (2)**.
 
       ![](./media/new/a3.png)
 
@@ -134,7 +134,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
    ![](./media/new/L1T2S6.png)
 
-1. From the left navigation pane, click **Models (1)** and select **Deploy a base model (2)**.
+1. From the left navigation pane, click **Models (1)** under the Deploy dropdown select **Deploy a base model (2)**.
 
    ![](./media/new/L1T2S7.png)
 
@@ -173,7 +173,7 @@ Before assigning the required roles, it is important to understand how these per
 | **Cognitive Services OpenAI Contributor** | Entra ID User | Microsoft Foundry | Allows deployment and management of GPT and embedding models |
 | **Cognitive Services OpenAI User** | Azure AI Search Managed Identity | Microsoft Foundry | Enables Azure AI Search to generate embeddings using OpenAI models |
 
-1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search** **(2)** from the Services section.
+1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search (Foundry IQ)** **(2)** from the Services section.
 
    ![](./media/aisearch1.png)
 
@@ -205,7 +205,7 @@ Before assigning the required roles, it is important to understand how these per
 
    >**Note**: The deployment may take around **10 - 12 minutes**, depending on Azure’s provisioning time for the AI Search service.
 
-1. In the Search Service, expand **Settings (1)** and select **Identity (2)** under the  section. Under **System assigned**, set the status to **On (3)** and click **Save (4)**.
+1. In the Search Service, expand **Security + networking (1)** and select **Identity (2)** under the  section. Under **System assigned**, set the status to **On (3)** and click **Save (4)**.
 
    ![](./media/new/w2.png)
 
@@ -213,7 +213,7 @@ Before assigning the required roles, it is important to understand how these per
 
    ![](./media/L1T3S7.png)
 
-1. Next, go to **Keys (1)** under **Settings**, and for API access control, select **Both (2)** options to enable complete access.
+1. Next, go to **Keys (1)** under **Security + networking**, and for API access control, select **Both (2)** options to enable complete access.
 
    ![](./media/l1.task1.22.png)
 
@@ -265,7 +265,7 @@ Before assigning the required roles, it is important to understand how these per
 
    - Under **Members** tab, select **Managed identity (1)**
    - Click on **+ Select members (2)**
-   - Managed identity: **Search service(1)** **(3)**
+   - Managed identity: **Search service(Foundry IQ)(1)** **(3)**
    - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
@@ -275,7 +275,7 @@ Before assigning the required roles, it is important to understand how these per
 
    ![](./media/blobrpa.png)   
 
-1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search** **(2)** from the Services section.
+1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search(Foundry IQ)** **(2)** from the Services section.
 
    ![](./media/aisearch1.png)
 
@@ -373,7 +373,7 @@ Before assigning the required roles, it is important to understand how these per
 
    - Under **Members** tab, select **Managed identity (1)**
    - Click on **+ Select members (2)**
-   - Managed identity: **Search service(1)** **(3)**
+   - Managed identity: **Search service(Foundry IQ) (1)** **(3)**
    - Then, select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
