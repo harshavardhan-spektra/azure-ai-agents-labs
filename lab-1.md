@@ -120,7 +120,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/a2.png)
 
-1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Create deployment (2)**.
+1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Deploy (2)**.
 
       ![](./media/new/a3-1.png)
 
@@ -271,7 +271,7 @@ Before assigning the required roles, it is important to understand how these per
    - Then select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/blobra.png)
+     ![](./media/new/blobra-1.png)
 
 1. Finally, click **Review + assign** twice to complete the assignment.
 
@@ -335,7 +335,7 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Select **Foundry (1)** from the left pane and select **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)**.
 
-   ![](./media/new/e6.png)
+   ![](./media/new/e6-1.png)
 
 1. In the Foundry service blade, select **Access control (IAM) (1)**, click **+ Add (2)** drop-down, and then choose **Add role assignment (3)**.
 
@@ -379,7 +379,7 @@ Before assigning the required roles, it is important to understand how these per
    - Then, select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (4)** search service.
    - Click on **Select (5)**
 
-     ![](./media/new/e8.png)
+     ![](./media/new/e8-1.png)
 
 1. Click **Review + assign** twice to finalize the role assignment.
 

@@ -65,7 +65,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. On the **Overview (1)** page of the Search Service, click **Import data (2)**.
 
-    ![](./media/L3T1S10.png)
+    ![](./media/L3T1S10-1.png)
 
 1. Select **Azure Blob Storage** as the data source.
 
@@ -98,7 +98,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**Checked** **(6)**|
 
-      ![](./media/new/L3T1S14.png)
+      ![](./media/new/L3T1S14-1.png)
 
 1. Click on **Next** twice.
 
@@ -118,7 +118,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. Select **Foundry (1)** from the left pane and select **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)**.
 
-   ![](./media/new/e6.png)
+   ![](./media/new/e6-1.png)
 
 1. On the **Overview** pane, click on **Go to Foundry portal** to navigate to the **Microsoft Foundry** portal.
 
