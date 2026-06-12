@@ -55,9 +55,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/finup.png)
 
-1. Navigate to Azure Portal and search **AI Search** and select **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>** in azure portal.
+1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search(Foundry IQ)** **(2)** from the Services section.
 
-   ![](./media/new/h11.png)
+   ![](./media/new/aisearch1-1.png)
+
+1. Select your **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**
+
+   ![](./media/new/w8.png)
 
 1. On the **Overview (1)** page of the Search Service, click **Import data (2)**.
 
@@ -71,13 +75,13 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    ![](./media/rag.png)
 
-1. On **Connect to your data** tab, enter the following details and click on **Next (5):**
+1. On **Connect to your data** tab, enter the following details and click on **Next (6):**
 
    |Setting|Value|
    |---|---|
    |Subscription|**Leave it default** **(1)**|
-   |Storage account|Select the Storage account with prefix **storage<inject key="Deployment ID" enableCopy="false"></inject> (2)**|
-   |Blob container|**healthplan** **(3)**|
+   |Storage account|Select   **storage<inject key="Deployment ID" enableCopy="false"></inject> (2)** from the drop down|
+   |Blob container| Select **healthplan** **(3)** from the drop down|
    |Authenticate using managed identity|**Enable** **(4)**|
    |Managed identity type|**System-assigned** **(5)**|
 
@@ -87,10 +91,10 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
    |Setting|Value|
    |---|---|
-   |Kind|**Microsoft Foundry (1)**|
+   |Kind|**Microsoft Foundry (1)** from the drop down|
    |Subscription|**Leave it default** **(2)**|
-   |Azure AI Foundry/Hub project|**my-project-<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)**|
-   |Model deployment|**text-embedding-3-large** **(4)**|
+   |Azure AI Foundry/Hub project|**my-project-<inject key="DeploymentID" enableCopy="false" /></inject>** **(3)** from the drop down|
+   |Model deployment|**text-embedding-3-large** **(4)** from the drop down|
    |Authentication type|**System assigned identity** **(5)**|
    |Acknowledgement rectangle|**Checked** **(6)**|
 
@@ -126,7 +130,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
 
 1. To add a new connection, go to **Connected resources (1)** and then click on **Add connection (2)**.
 
-   ![](./media/new/L3T1S22.png)
+   ![](./media/new/L3T1S22-1.png)
 
 1. In **Choose a connection** pop up window, select **Azure AI Search (1)** and click on **Continue (2)**.
 
@@ -137,7 +141,7 @@ In this task, you will create an **Azure AI Search index** to store vectorized r
    ![](./media/search-conn-3001.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
+> - Scroll down in the lab guide and hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 

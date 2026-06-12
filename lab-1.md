@@ -39,18 +39,18 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
     - Subscription: **Leave default subscription**
 
-    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** 
+    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject> (1)** from the drop down 
     - Name: Enter **my-foundry-<inject key="Deployment ID" enableCopy="false"></inject> (2)** 
 
-    - Region: **<inject key="Region" enableCopy="false"></inject>** **(3)**
+    - Region: Select **<inject key="Region" enableCopy="false"></inject>** **(3)** from the drop down
 
     - Default project name: Enter **my-project-<inject key="Deployment ID" enableCopy="false"></inject> (4)** 
 
-         ![](./media/new/7.png) 
+         ![](./media/new/7-1.png) 
 
 1. On **Review + create** tab, click on **Create**.
 
-   ![](./media/new/3a.png)
+   ![](./media/new/3a-1.png)
 
 1. Wait for the deployment to be completed, and then click on **Go to resource.**
 
@@ -81,24 +81,24 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
    ![](./media/new/5a.png)
 
-1. Once you are in the **Microsoft Foundry** portal, locate the **New Foundry** option and switch the toggle to **Enabled**.
+1. Once you are in the **Microsoft Foundry** portal, locate the **New Foundry** option and ensure the toggle is **Enabled**.
 
-   ![](./media/new/8.png)
+   ![](./media/new/8-1.png)
 
 1. On the New Foundry page, if you see a pop-up **Welcome to the new Microsoft Foundry** click on **X**.
 
    ![](./media/new/L1T1S12.png)
 
-1. If you are not already inside your project, navigate to the **All projects** page in the Foundry portal and select your **project**.
+1. If you are not already in your project, select **Projects** located next to the **Microsoft Foundry** heading, then click on the project named **my-project-<inject key="Deployment ID" enableCopy="false"></inject>** that you created earlier.
 
-   ![](./media/new/select-foundry-project.png)
+   ![](./media/new/select-foundry-project-1.png)
 
 1. Copy the **API Key (1)** and **Project endpoint (2)** and save them in **Notepad** for later use.
 
    ![](./media/new/L1T1S13.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
+> - Scroll down in the lab guide and hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -108,11 +108,11 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
 In this task, you will deploy a large language model (LLM) and an embedding model within your Microsoft Foundry project. These models will be used for AI-driven applications and vector-based search capabilities in upcoming labs.
 
-1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Deployments (2)** from left pane and Under the Deploy dropdown select **Deploy a base model (3)**.
+1. In the **Microsoft Foundry** portal, select **Build (1)** from the top right corner, click **Deployments (2)** from left pane and select **Deploy a base model (3)**.
 
-    ![](./media/new/L1T2S1.png)
+    ![](./media/new/L1T2S1-1.png)
 
-1. In the **Model** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)** from the results.
+1. In the **Models** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)** from the results.
 
     ![](./media/new/a1.png)
 
@@ -122,23 +122,25 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. On the **Deploy gpt-4.1** page under the Deployment Information, change the **Tokens per Minute Rate Limit** to **200K (1)** and click on **Create deployment (2)**.
 
-      ![](./media/new/a3.png)
+      ![](./media/new/a3-1.png)
+
+   > **Note:** The **Tokens per Minute rate limit** can also be adjusted using the keyboard arrow keys to increase or decrease the value.
 
    >**Note:** If the **Tokens per Minute rate limit** of **200K** is not available, use the next **highest available limit** (e.g., 150K or 100K).
 
-1. After deployment, select **Models (1)** from left navigation pane and select the **gpt-4.1 (2)** model.
+1. After deployment, select **Deployments (1)** from left navigation pane and select the **gpt-4.1 (2)** model.
 
-   ![](./media/new/a4.png)
+   ![](./media/new/a4-1.png)
 
 1. Under **gpt-4.1**, select the **Details (1)** tab from top and copy the **Target URI (2)** and save it in **Notepad** for later use.
 
    ![](./media/new/L1T2S6.png)
 
-1. From the left navigation pane, click **Models (1)** under the Deploy dropdown select **Deploy a base model (2)**.
+1. From the left navigation pane, click **Deployments (1)** and select **Deploy a base model (2)**.
 
-   ![](./media/new/L1T2S7.png)
+   ![](./media/new/L1T2S7-1.png)
 
-1. In the **Model** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
+1. In the **Models** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
 
       ![](./media/new/17.png)
 
@@ -146,12 +148,12 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
     ![](./media/new/18.png)
 
-1. From the left navigation pane, click **Models (1)** and ensure both the **Models (2)** are deployed successfully.
+1. From the left navigation pane, click **Deployments (1)** and ensure both the **Models (2)** are deployed successfully.
 
-   ![](./media/new/L1T2S10.png)
+   ![](./media/new/L1T2S10-1.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
-> - If you receive a success message, you can proceed to the next task.
+> - Scroll down in the lab guide and hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task.
 > - If not, carefully read the error message and retry the step, following the instructions in the lab guide. 
 > - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
 
@@ -175,7 +177,7 @@ Before assigning the required roles, it is important to understand how these per
 
 1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search (Foundry IQ)** **(2)** from the Services section.
 
-   ![](./media/aisearch1.png)
+   ![](./media/new/aisearch1-1.png)
 
 1. You will be redirected to the Microsoft Foundry interface. Within the **AI Search** section, click **+ Create** to begin creating a new search service.
 
@@ -185,19 +187,19 @@ Before assigning the required roles, it is important to understand how these per
 
     - Subscription: **Leave default subscription**
 
-    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)**
+    - Resource group: Select **azure-ai-agents-<inject key="Deployment ID" enableCopy="false"></inject>** **(1)** from the drop down
 
     - Service Name: **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject> (2)**
 
-    - Location: **<inject key="Region" enableCopy="false"></inject>** **(3)**
+    - Location: **<inject key="Region" enableCopy="false"></inject>** **(3)** from the drop down
 
     - Pricing tier: **Standard (4)**
 
-      ![](./media/new/w1.png)
+      ![](./media/w1-1.png)
 
 1. On the **Review + create** tab, click **Create** to deploy the search service.
 
-   ![](./media/createss.png)
+   ![](./media/createss-1.png)
 
 1. Wait until the deployment is completed, and then click on **Go to resource**.
 
@@ -247,7 +249,7 @@ Before assigning the required roles, it is important to understand how these per
 
 1. Click on **Create** to create a storage account.
 
-   ![](./media/new/w5.png)
+   ![](./media/new/w5-1.png)
 
 1. Wait for the deployment to be completed, and then click on **Go to resource.**
 
@@ -277,7 +279,7 @@ Before assigning the required roles, it is important to understand how these per
 
 1. In the Azure portal, use the search bar at the top to search for **AI Search (1)**, and then select **AI Search(Foundry IQ)** **(2)** from the Services section.
 
-   ![](./media/aisearch1.png)
+   ![](./media/new/aisearch1-1.png)
 
 1. Select your **my-search-service-<inject key="Deployment ID" enableCopy="false"></inject>**
 
@@ -474,8 +476,8 @@ In this task, you will install the required dependencies, configure a virtual en
 
 1. In the `sample.env` file, provide the following environment variables using the values retrieved from your Microsoft Foundry project:
 
-   - `AIPROJECT_ENDPOINT`: Provide the **Project endpoint** value you have copied in Step 13 of Task 1.
-   - `API_KEY`: Provide the **Key** value of the **gpt-4.1** model you have copied in Step 13 of Task 1.
+   - `AIPROJECT_ENDPOINT`: Provide the **Project endpoint** value you have copied in Step 14 of Task 1.
+   - `API_KEY`: Provide the **Key** value of the **gpt-4.1** model you have copied in Step 14 of Task 1.
    - `CHAT_MODEL_ENDPOINT`: Provide the **Target URI** of the **gpt-4.1** model you have copied in Step 6 of Task 2.
    - `CHAT_MODEL`: **gpt-4.1**
 

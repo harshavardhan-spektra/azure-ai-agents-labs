@@ -139,6 +139,8 @@ In this task, you will create the Search, Report, and Validation Agents to retri
     
       ![](./media/new/k11.png) 
 
+      > **Note:** Here's an example of what your output is likely to see; however, the precise recommendation could vary.
+
 ## 🧾 Summary
 
 In this lab, you accomplished the following:
