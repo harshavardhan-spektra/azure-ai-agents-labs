@@ -89,9 +89,9 @@ In this task, you will create a Microsoft Foundry resource, initialize an AI Pro
 
    ![](./media/new/L1T1S12.png)
 
-1. If you are not already in your project, select **Projects** located next to the **Microsoft Foundry** heading, then click on the project named **my-project-<inject key="Deployment ID" enableCopy="false"></inject>** that you created earlier.
+1. If you are not already inside your project, On the **All projects** page in the Foundry portal, select **my-project-<inject key="Deployment ID" enableCopy="false"></inject>**
 
-   ![](./media/new/select-foundry-project-1.png)
+   ![](./media/new/select-foundry-project.png)
 
 1. Copy the **API Key (1)** and **Project endpoint (2)** and save them in **Notepad** for later use.
 
@@ -114,7 +114,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. In the **Models** page, search for **gpt-4.1 (1)** and select **gpt-4.1 (2)** from the results.
 
-    ![](./media/new/a1.png)
+    ![](./media/new/a1-1.png)
 
 1. In the **gpt-4.1** page, click on **Deploy (1)** and select **Custom Settings (2)** from the dropdown.
 
@@ -142,7 +142,7 @@ In this task, you will deploy a large language model (LLM) and an embedding mode
 
 1. In the **Models** page, search for **text-embedding-3-large (1)** and select **text-embedding-3-large (2)** from the results.
 
-      ![](./media/new/17.png)
+      ![](./media/new/17-1.png)
 
 1. In the **text-embedding-3-large** page, click on **Deploy (1)** and select **Default Settings (2)** from the the dropdown.
 
